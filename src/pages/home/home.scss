@@ -1,3 +1,12 @@
 page-home {
-
+  @media(max-width: 736px) {
+    .home-page-enter-button {
+      margin-top: -26px;
+    }
+  }
+  @media(max-width: 414px) {
+    .logo-wrapper {
+      margin-top: 200px;
+    }
+  }
 }

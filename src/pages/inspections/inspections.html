@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><img class="header-logo" src="assets/img/atco-industries-logo-180x180.png">Inspections</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list no-lines>
+    <ion-list-header>Employee: Marvin Dawson</ion-list-header>
+    <button ion-button [navPush]="pushInspectionJobsPage">Manage Inspections Jobs</button>
+    <button ion-button color="secondary" [navPush]="pushTeamMembersPage">Manage Team Members</button>
+  </ion-list>
+</ion-content>
