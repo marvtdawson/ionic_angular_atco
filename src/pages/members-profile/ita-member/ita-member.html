@@ -1,0 +1,81 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title> James's Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <img class="profile-card-image" src="assets/img/blank_thumbnail.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        James Brown
+      </ion-card-title>
+      <p>
+        CPC at the Universal location:
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-item>
+    <ion-icon name="md-copy" item-start></ion-icon>
+    Completed Inspections
+    <ion-badge item-end color="secondary">7</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="md-warning" item-start></ion-icon>
+    Incomplete Inspections
+    <ion-badge item-end color="danger">3</ion-badge>
+  </ion-item>
+
+  <ion-list-header>Active Inspections</ion-list-header>
+  <ion-list no-lines>
+    <ion-item>
+      <ion-thumbnail class="job-thumbnail-img" item-start>
+        <img src="assets/img/part_placeholder.png"/>
+      </ion-thumbnail>
+      <h2>ATCO Industries Inc</h2>
+      <h5>REV: A</h5>
+      <p>Start Up • 46977</p>
+      <button ion-button clear item-end [navPush]="pushAtcoIndustriesPage">View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail class="job-thumbnail-img" item-start>
+        <img src="assets/img/part_placeholder.png"/>
+      </ion-thumbnail>
+      <h2>GM Arlington</h2>
+      <h5>REV: C</h5>
+      <p>Battery Cables • 49602</p>
+      <button ion-button clear item-end [navPush]="pushGmArlingtonPage">View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail class="job-thumbnail-img" item-start>
+        <img src="assets/img/part_placeholder.png"/>
+      </ion-thumbnail>
+      <h2>Hennings Automotive</h2>
+      <h5>REV: B</h5>
+      <p>Right B Pillars • 49747</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail class="job-thumbnail-img" item-start>
+        <img src="assets/img/part_placeholder.png"/>
+      </ion-thumbnail>
+      <h2>Inteva Products</h2>
+      <h5>REV: E</h5>
+      <p>Over-Head Console • 47997</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail class="job-thumbnail-img" item-start>
+        <img src="assets/img/part_placeholder.png"/>
+      </ion-thumbnail>
+      <h2>Magna AIM</h2>
+      <h5>REV: J</h5>
+      <p>Shutters • 49855</p>
+      <button ion-button clear item-end >View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

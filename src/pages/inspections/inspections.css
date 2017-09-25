@@ -1,4 +1,7 @@
 @media (max-width: 736px) {
+  page-inspections .inspection-home-page {
+    width: 100%;
+    min-height: 300px; }
   page-inspections .card-background-page ion-card {
     position: relative;
     text-align: center;
@@ -22,12 +25,16 @@
     width: 100%;
     color: #fff; } }
 @media (max-width: 414px) {
+  page-inspections .inspection-home-page {
+    width: 100%;
+    min-height: 300px; }
   page-inspections .card-background-page ion-card {
     position: relative;
     text-align: center;
     width: 100%;
     min-height: 300px;
-    float: none; }
+    float: none;
+    margin: 25px auto 25px; }
   page-inspections .card-background-page .card-title {
     position: absolute;
     z-index: 10;

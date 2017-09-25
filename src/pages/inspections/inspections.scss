@@ -1,6 +1,10 @@
 page-inspections {
 
   @media(max-width: 736px) {
+    .inspection-home-page{
+      width: 100%;
+      min-height: 300px;
+    }
     .card-background-page {
 
       ion-card {
@@ -35,6 +39,10 @@ page-inspections {
   }
 
   @media(max-width: 414px) {
+    .inspection-home-page{
+      width: 100%;
+      min-height: 300px;
+    }
     .card-background-page {
 
       ion-card {
@@ -43,6 +51,7 @@ page-inspections {
         width: 100%;
         min-height: 300px;
         float: none;
+        margin: 25px auto 25px;
       }
 
       .card-title {
