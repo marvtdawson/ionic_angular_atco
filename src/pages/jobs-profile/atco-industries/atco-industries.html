@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-navbar>
-      <ion-title>{{ customerName }} -> {{ jobTitle }} {{ revStatus }}</ion-title>
+      <ion-title> {{ jobTitle }} {{ revStatus }} </ion-title>
     </ion-navbar>
     <ion-buttons end>
       <button ion-button icon-only color="royal">
@@ -12,6 +12,10 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-item>
+    <ion-label>Close Inspection</ion-label>
+    <ion-toggle checked="false" color="danger"></ion-toggle>
+  </ion-item>
   <ion-card>
     <img class="inspection-card-image" src="assets/img/part_placeholder.png"/>
     <ion-card-content>
@@ -32,33 +36,33 @@
     </ion-card-content>
   </ion-card>
   <ion-item>
-    <ion-icon name="md-build" item-start></ion-icon>
-    Check and confirm customer name.
+    <ion-icon name="md-checkmark" item-start></ion-icon>
+    Confirm customer name.
     <ion-badge item-start color="secondary">1</ion-badge>
   </ion-item>
   <ion-item>
-    <ion-icon name="md-build" item-start></ion-icon>
-    Check and confirm part number.
+    <ion-icon name="md-checkmark" item-start></ion-icon>
+    Confirm part number.
     <ion-badge item-start color="secondary">2</ion-badge>
   </ion-item>
   <ion-item>
-    <ion-icon name="md-build" item-start></ion-icon>
-    Check and confirm new revision.
+    <ion-icon name="md-checkmark" item-start></ion-icon>
+    Confirm new revision.
     <ion-badge item-start color="secondary">3</ion-badge>
   </ion-item>
   <ion-item>
-    <ion-icon name="md-build" item-start></ion-icon>
+    <ion-icon name="md-checkmark" item-start></ion-icon>
     Confirm proper inspector attire and materials are present.
     <ion-badge item-start color="secondary">4</ion-badge>
   </ion-item>
   <ion-item>
-    <ion-icon name="md-build" item-start></ion-icon>
-    Check and confirm proper witness mark color.
+    <ion-icon name="md-checkmark" item-start></ion-icon>
+    Confirm proper witness mark color.
     <ion-badge item-start color="secondary">5</ion-badge>
   </ion-item>
   <ion-item>
-    <ion-icon name="md-build" item-start></ion-icon>
-    Check and confirm the correct "Certified" sticker color is present for the job.
+    <ion-icon name="md-checkmark" item-start></ion-icon>
+    Confirm the correct "Certified" sticker color is present for the job.
     <ion-badge item-start color="secondary">6</ion-badge>
   </ion-item>
 

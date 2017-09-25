@@ -20,6 +20,7 @@ import { GmArlingtonPage } from "../pages/jobs-profile/gm-arlington/gm-arlington
 
 import { TeamMembersPage } from "../pages/team-members/team-members";
 import { MembersProfilePage } from "../pages/members-profile/members-profile";
+import {NewJobPage} from "../pages/new-job/new-job";
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MembersProfilePage } from "../pages/members-profile/members-profile";
     AtcoIndustriesPage,
     GmArlingtonPage,
     TeamMembersPage,
-    MembersProfilePage
+    MembersProfilePage,
+    NewJobPage
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { MembersProfilePage } from "../pages/members-profile/members-profile";
     AtcoIndustriesPage,
     GmArlingtonPage,
     TeamMembersPage,
-    MembersProfilePage
+    MembersProfilePage,
+    NewJobPage
   ],
   providers: [
     StatusBar,

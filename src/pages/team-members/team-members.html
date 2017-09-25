@@ -14,240 +14,260 @@
 
 
 <ion-content padding>
-  <ion-list>
-    <ion-list-header>PC's</ion-list-header>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Larry Motes</h2>
-      <h5>Location: Universal</h5>
-      <p>Shift: 1st</p>
-      <button ion-button clear item-end [navPush]="pushMemberProfilePage">View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Trinni</h2>
-      <h5>Location: Universal</h5>
-      <p>Shift: 1st</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Raechelle</h2>
-      <h5>Location: General Motors / General Assembly</h5>
-      <p>Shift: 2nd</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Sarah</h2>
-      <h5>Location: General Motors / General Assembly</h5>
-      <p>Shift: 1st</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Darnell</h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 1st</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Jason</h2>
-      <h5>Location: General Motors / General Assembly </h5>
-      <p>Shift: 2nd</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Naomi</h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 3rd</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: New Hire</h2>
-      <h5>Location: General Motors / General Assembly </h5>
-      <p>Shift: 3rd</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
+  <div padding>
+    <ion-segment [(ngModel)]="inspectorTypes">
+      <ion-segment-button value="pc">
+        PC's
+      </ion-segment-button>
+      <ion-segment-button value="ita">
+        ITA's
+      </ion-segment-button>
+      <ion-segment-button value="cpc">
+        CPC's
+      </ion-segment-button>
+    </ion-segment>
+  </div>
 
-    <ion-list-header>ITA's</ion-list-header>
+
+
+  <div [ngSwitch]="inspectorTypes">
+    <ion-list *ngSwitchCase="'pc'">
       <ion-item>
         <ion-avatar class="job-thumbnail-img" item-start>
           <img src="assets/img/blank_thumbnail.jpg">
         </ion-avatar>
-        <h2>Name: Kenny</h2>
+        <h2>Name: Larry Motes</h2>
+        <h5>Location: Universal</h5>
+        <p>Shift: 1st</p>
+        <button ion-button clear item-end [navPush]="pushMemberProfilePage">View Profile</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Trinni</h2>
+        <h5>Location: Universal</h5>
+        <p>Shift: 1st</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Raechelle</h2>
+        <h5>Location: General Motors </h5>
+        <p>Shift: 2nd</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Sarah</h2>
+        <h5>Location: General Motors </h5>
+        <p>Shift: 1st</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Darnell</h2>
         <h5>Location: Universal </h5>
         <p>Shift: 1st</p>
         <button ion-button clear item-end>View Profile</button>
       </ion-item>
-    <ion-item>
+      <ion-item>
         <ion-avatar class="job-thumbnail-img" item-start>
           <img src="assets/img/blank_thumbnail.jpg">
         </ion-avatar>
-        <h2>Name: Alyssia</h2>
+        <h2>Name: Jason</h2>
+        <h5>Location: General Motors </h5>
+        <p>Shift: 2nd</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Naomi</h2>
+        <h5>Location: Universal </h5>
+        <p>Shift: 3rd</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: New Hire</h2>
+        <h5>Location: General Motors </h5>
+        <p>Shift: 3rd</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'ita'">
+        <ion-item>
+          <ion-avatar class="job-thumbnail-img" item-start>
+            <img src="assets/img/blank_thumbnail.jpg">
+          </ion-avatar>
+          <h2>Name: Kenny</h2>
+          <h5>Location: Universal </h5>
+          <p>Shift: 1st</p>
+          <button ion-button clear item-end>View Profile</button>
+        </ion-item>
+      <ion-item>
+          <ion-avatar class="job-thumbnail-img" item-start>
+            <img src="assets/img/blank_thumbnail.jpg">
+          </ion-avatar>
+          <h2>Name: Alyssia</h2>
+          <h5>Location: Universal </h5>
+          <p>Shift: 1st</p>
+          <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Her Name</h2>
+        <h5>Location: General Motors</h5>
+        <p>Shift: 1st</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+          <ion-avatar class="job-thumbnail-img" item-start>
+            <img src="assets/img/blank_thumbnail.jpg">
+          </ion-avatar>
+          <h2>Name: Chris</h2>
+          <h5>Location: Universal </h5>
+          <p>Shift: 2nd</p>
+          <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+          <ion-avatar class="job-thumbnail-img" item-start>
+            <img src="assets/img/blank_thumbnail.jpg">
+          </ion-avatar>
+          <h2>Name: Veronica </h2>
+          <h5>Location: Universal </h5>
+          <p>Shift: 2nd</p>
+          <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: JaMarcus </h2>
+        <h5>Location: Universal </h5>
+        <p>Shift: 3rd</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Nicole </h2>
+        <h5>Location: General Motors </h5>
+        <p>Shift: 3rd</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'cpc'">
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: James Brown </h2>
         <h5>Location: Universal </h5>
         <p>Shift: 1st</p>
         <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Her Name</h2>
-      <h5>Location: General Motors / General Assembly </h5>
-      <p>Shift: 1st</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
+      </ion-item>
+      <ion-item>
         <ion-avatar class="job-thumbnail-img" item-start>
           <img src="assets/img/blank_thumbnail.jpg">
         </ion-avatar>
-        <h2>Name: Chris</h2>
+        <h2>Name: Marissa </h2>
         <h5>Location: Universal </h5>
-        <p>Shift: 2nd</p>
+        <p>Shift: 1st</p>
         <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
+      </ion-item>
+      <ion-item>
         <ion-avatar class="job-thumbnail-img" item-start>
           <img src="assets/img/blank_thumbnail.jpg">
         </ion-avatar>
-        <h2>Name: Veronica </h2>
+        <h2>Name: ?????? </h2>
+        <h5>Location: Universal </h5>
+        <p>Shift: 1st</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Marvin Dawson </h2>
         <h5>Location: Universal </h5>
         <p>Shift: 2nd</p>
         <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: JaMarcus </h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 3rd</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Nicole </h2>
-      <h5>Location: General Motors / General Assembly </h5>
-      <p>Shift: 3rd</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Rick Hines</h2>
+        <h5>Location: Universal </h5>
+        <p>Shift: 2nd</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Blake Ballard </h2>
+        <h5>Location: Universal </h5>
+        <p>Shift: 1st</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: James Brown </h2>
+        <h5>Location: Universal </h5>
+        <p>Shift: 1st</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Marissa </h2>
+        <h5>Location: Universal </h5>
+        <p>Shift: 1st</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Darius Bryant </h2>
+        <h5>Location: Universal </h5>
+        <p>Shift: 1st</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
 
-    <ion-list-header>CPC's</ion-list-header>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: James Brown </h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 1st</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Marissa </h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 1st</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: ?????? </h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 1st</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Marvin Dawson </h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 2nd</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Rick Hines</h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 2nd</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Blake Ballard </h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 1st</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: James Brown </h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 1st</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Marissa </h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 1st</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Darius Bryant </h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 1st</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
-
-    <ion-item>
-      <ion-avatar class="job-thumbnail-img" item-start>
-        <img src="assets/img/blank_thumbnail.jpg">
-      </ion-avatar>
-      <h2>Name: Patricia </h2>
-      <h5>Location: Universal </h5>
-      <p>Shift: 3rd</p>
-      <button ion-button clear item-end>View Profile</button>
-    </ion-item>
+      <ion-item>
+        <ion-avatar class="job-thumbnail-img" item-start>
+          <img src="assets/img/blank_thumbnail.jpg">
+        </ion-avatar>
+        <h2>Name: Patricia </h2>
+        <h5>Location: Universal </h5>
+        <p>Shift: 3rd</p>
+        <button ion-button clear item-end>View Profile</button>
+      </ion-item>
   </ion-list>
+  </div>
 
 
 </ion-content>

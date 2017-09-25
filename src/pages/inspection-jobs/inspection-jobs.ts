@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {AtcoIndustriesPage} from "../jobs-profile/atco-industries/atco-industries";
 import {GmArlingtonPage} from "../jobs-profile/gm-arlington/gm-arlington";
+import {NewJobPage} from "../new-job/new-job";
 
 /**
  * Generated class for the InspectionJobsPage page.
@@ -19,6 +20,7 @@ export class InspectionJobsPage {
 
   pushAtcoIndustriesPage = AtcoIndustriesPage;
   pushGmArlingtonPage =  GmArlingtonPage;
+  pushNewJobPage = NewJobPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

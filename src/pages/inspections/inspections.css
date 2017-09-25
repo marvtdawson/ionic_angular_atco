@@ -24,13 +24,16 @@
 @media (max-width: 414px) {
   page-inspections .card-background-page ion-card {
     position: relative;
-    text-align: center; }
+    text-align: center;
+    width: 100%;
+    min-height: 300px;
+    float: none; }
   page-inspections .card-background-page .card-title {
     position: absolute;
     z-index: 10;
     font-size: 2.5em;
     width: 100%;
-    min-height: 322px;
+    min-height: 45px;
     font-weight: bold;
     color: #000000;
     top: 42%;
