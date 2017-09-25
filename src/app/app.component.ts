@@ -34,7 +34,7 @@ export class MyApp {
     this.userAuth.login().then((isLoggedIn) => {
 
         if (isLoggedIn === false) {
-          this.rootPage = InspectionsPage;
+          this.rootPage = HomePage;
         } else {
           this.rootPage = HomePage;
         }
