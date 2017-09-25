@@ -21,3 +21,16 @@
   height: 40px;
   margin-right: 15px;
 }
+
+@media(max-width: 763px) {
+  .inspection-card-image {
+    width: 150px;
+    margin: 0 auto 0;
+  }
+}
+@media(max-width: 414px) {
+  .inspection-card-image {
+    width: 350px;
+    margin: 0 auto 0;
+  }
+}

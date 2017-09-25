@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-navbar>
+      <ion-title>{{ customerName }} -> {{ jobTitle }} {{ revStatus }}</ion-title>
+    </ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="md-add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <img class="inspection-card-image" src="assets/img/part_placeholder.png"/>
+    <ion-card-content>
+      <ion-card-title>
+        Job Name: {{ jobTitle }}
+      </ion-card-title>
+      <h2>REV: {{ revNumber }}</h2>
+      <p>
+        The {{ jobTitle }} job requires the following steps.  Should you have any questions please contact your ITA or PC.
+        If neither can be found we recommend that you do not continue with this inspection until you have been officially
+        trained and certified.
+      </p>
+      <p>
+        After your PC or ITA has explained this process to you, if you do not feel comfortable with the inspection process
+         it is recommend that you do not sign or be approved as a certified inspector until you feel comfortable with this
+        inspection.
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-item>
+    <ion-icon name="md-build" item-start></ion-icon>
+    Check and confirm customer name.
+    <ion-badge item-start color="secondary">1</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="md-build" item-start></ion-icon>
+    Check and confirm part number.
+    <ion-badge item-start color="secondary">2</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="md-build" item-start></ion-icon>
+    Check and confirm new revision.
+    <ion-badge item-start color="secondary">3</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="md-build" item-start></ion-icon>
+    Confirm proper inspector attire and materials are present.
+    <ion-badge item-start color="secondary">4</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="md-build" item-start></ion-icon>
+    Check and confirm proper witness mark color.
+    <ion-badge item-start color="secondary">5</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="md-build" item-start></ion-icon>
+    Check and confirm the correct "Certified" sticker color is present for the job.
+    <ion-badge item-start color="secondary">6</ion-badge>
+  </ion-item>
+
+</ion-content>
+

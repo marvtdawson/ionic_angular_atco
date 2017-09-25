@@ -1,3 +1,13 @@
 page-members-profile {
-
+  @media(max-width: 763px) {
+    .profile-card-image {
+      width: 100px;
+    }
+  }
+  @media(max-width: 414px) {
+    .profile-card-image {
+      width: 350px;
+      margin: 0 auto 0;
+    }
+  }
 }

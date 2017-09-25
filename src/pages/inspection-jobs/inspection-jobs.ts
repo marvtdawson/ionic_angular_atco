@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {AtcoIndustriesPage} from "../jobs-profile/atcoindustries/atco-industries";
+import {AtcoIndustriesPage} from "../jobs-profile/atco-industries/atco-industries";
 import {GmArlingtonPage} from "../jobs-profile/gm-arlington/gm-arlington";
 
 /**
@@ -18,7 +18,7 @@ import {GmArlingtonPage} from "../jobs-profile/gm-arlington/gm-arlington";
 export class InspectionJobsPage {
 
   pushAtcoIndustriesPage = AtcoIndustriesPage;
-  pushGmArlintonPage =  GmArlingtonPage;
+  pushGmArlingtonPage =  GmArlingtonPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

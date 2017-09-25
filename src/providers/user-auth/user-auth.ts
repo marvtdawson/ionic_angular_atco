@@ -24,7 +24,7 @@ export class UserAuthProvider {
       // set timeout function to 3 seconds
       setTimeout(function () {
         resolve(false);
-      }, 3000);
+      }, 5000);
     });
   }
 

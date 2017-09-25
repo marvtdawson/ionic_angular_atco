@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {MembersProfilePage} from "../members-profile/members-profile";
 
 /**
  * Generated class for the TeamMembersPage page.
@@ -14,6 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'team-members.html',
 })
 export class TeamMembersPage {
+
+  pushMemberProfilePage = MembersProfilePage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

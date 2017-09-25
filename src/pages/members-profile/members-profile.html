@@ -7,12 +7,35 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>members-profile</ion-title>
+    <ion-title> Larry's Profile</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-card>
+    <img class="profile-card-image" src="assets/img/blank_thumbnail.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        Larry Motes
+      </ion-card-title>
+      <p>
+        Project Coordinator at the Universal location:
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-item>
+    <ion-icon name="md-copy" item-start></ion-icon>
+      Completed Inspections
+    <ion-badge item-end color="secondary">9</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="md-warning" item-start></ion-icon>
+      Incomplete Inspections
+    <ion-badge item-end color="danger">1</ion-badge>
+  </ion-item>
+  <ion-item>
+    <button ion-button [navPush]="pushTeamMembersPage">View Team</button>
+  </ion-item>
 </ion-content>

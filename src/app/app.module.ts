@@ -14,7 +14,7 @@ import { UserAuthProvider } from '../providers/user-auth/user-auth';
 import { InspectionsPage } from "../pages/inspections/inspections";
 import { InspectionJobsPage} from "../pages/inspection-jobs/inspection-jobs";
 import { JobsProfilePage } from "../pages/jobs-profile/jobs-profile";
-import { AtcoIndustriesPage } from "../pages/jobs-profile/atcoindustries/atco-industries";
+import { AtcoIndustriesPage } from "../pages/jobs-profile/atco-industries/atco-industries";
 import { GmArlingtonPage } from "../pages/jobs-profile/gm-arlington/gm-arlington";
 
 

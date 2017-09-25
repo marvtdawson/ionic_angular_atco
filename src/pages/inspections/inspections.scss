@@ -1,3 +1,31 @@
 page-inspections {
 
+  .card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+
+    .card-title {
+      position: absolute;
+      z-index: 10;
+      font-size: 2.5em;
+      width: 100%;
+      min-height:322px;
+      font-weight: bold;
+      color: #000000;
+      top: 42%;
+      margin: 0 auto 0;
+    }
+
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+
+  }
 }
