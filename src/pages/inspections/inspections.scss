@@ -10,8 +10,9 @@ page-inspections {
       ion-card {
         position: relative;
         text-align: center;
+        margin-top: 15px;
         width: 45%;
-        min-height: 300px;
+        min-height: 275px;
         float: left;
         border: 1px dotted red;
       }
@@ -33,6 +34,9 @@ page-inspections {
         top: 52%;
         width: 100%;
         color: #fff;
+      }
+      .nav-header-title-text{
+
       }
 
     }
@@ -72,6 +76,10 @@ page-inspections {
         top: 52%;
         width: 100%;
         color: #fff;
+      }
+
+      .nav-header-title-text{
+        float: right;
       }
 
     }

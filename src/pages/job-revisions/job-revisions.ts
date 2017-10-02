@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ModalController } from "ionic-angular";
+import { RevisionModalPage } from "./revision-modal/revision-modal";
 
 /**
  * Generated class for the JobRevisionsPage page.
@@ -15,11 +17,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class JobRevisionsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public modalCtrl: ModalController) {
+  }
+
+  presentModal() {
+    let modal = this.modalCtrl.create(RevisionModalPage);
+    modal.present();
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad JobRevisionsPage');
+    //console.log('ionViewDidLoad JobRevisionsPage');
   }
 
 }

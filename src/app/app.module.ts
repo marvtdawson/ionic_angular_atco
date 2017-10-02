@@ -14,6 +14,8 @@ import { UserAuthProvider } from '../providers/user-auth/user-auth';
 import { InspectionsPage } from "../pages/inspections/inspections";
 import { InspectionJobsPage} from "../pages/inspection-jobs/inspection-jobs";
 import { JobsProfilePage } from "../pages/jobs-profile/jobs-profile";
+import { JobRevisionsPage } from "../pages/job-revisions/job-revisions";
+import { RevisionModalPage } from "../pages/job-revisions/revision-modal/revision-modal";
 import { AtcoIndustriesPage } from "../pages/jobs-profile/atco-industries/atco-industries";
 import { GmArlingtonPage } from "../pages/jobs-profile/gm-arlington/gm-arlington";
 
@@ -22,6 +24,8 @@ import { MembersProfilePage } from "../pages/members-profile/members-profile";
 import { NewJobPage } from "../pages/new-job/new-job";
 import { ItaMemberPage } from "../pages/members-profile/ita-member/ita-member";
 
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -29,12 +33,14 @@ import { ItaMemberPage } from "../pages/members-profile/ita-member/ita-member";
     InspectionsPage,
     InspectionJobsPage,
     JobsProfilePage,
+    JobRevisionsPage,
     AtcoIndustriesPage,
     GmArlingtonPage,
     TeamMembersPage,
     MembersProfilePage,
     NewJobPage,
-    ItaMemberPage
+    ItaMemberPage,
+    RevisionModalPage
   ],
   imports: [
     BrowserModule,
@@ -48,12 +54,14 @@ import { ItaMemberPage } from "../pages/members-profile/ita-member/ita-member";
     InspectionsPage,
     InspectionJobsPage,
     JobsProfilePage,
+    JobRevisionsPage,
     AtcoIndustriesPage,
     GmArlingtonPage,
     TeamMembersPage,
     MembersProfilePage,
     NewJobPage,
     ItaMemberPage,
+    RevisionModalPage,
   ],
   providers: [
     StatusBar,

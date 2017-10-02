@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-navbar>
-      <ion-title> {{ jobTitle }} {{ revStatus }} </ion-title>
+      <ion-title> {{ jobTitle }} / {{ revStatus }} </ion-title>
     </ion-navbar>
     <ion-buttons end>
       <button ion-button icon-only color="royal">
@@ -22,7 +22,7 @@
       <ion-card-title>
         Job Name: {{ jobTitle }}
       </ion-card-title>
-      <h2>REV: {{ revNumber }}</h2>
+      <button ion-button [navPush]="navToJobRevisionPage">REV: {{ revNumber }}</button>
       <p>
         The {{ jobTitle }} job requires the following steps.  Should you have any questions please contact your ITA or PC.
         If neither can be found we recommend that you do not continue with this inspection until you have been officially

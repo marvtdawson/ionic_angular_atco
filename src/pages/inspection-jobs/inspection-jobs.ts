@@ -26,7 +26,7 @@ export class InspectionJobsPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad InspectionJobsPage');
+    //console.log('ionViewDidLoad InspectionJobsPage');
   }
 
 }

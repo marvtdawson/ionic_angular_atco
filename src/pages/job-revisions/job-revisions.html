@@ -7,12 +7,34 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>job-revisions</ion-title>
+    <ion-title>Revisions</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-list no-lines>
+    <ion-item (click)="presentModal()">
+      <ion-thumbnail item-start><img src="assets/img/rev-icons/rev-A.jpg" /></ion-thumbnail>
+      <p>Changed inspection quantity from 3 to 5 times.</p>
+    </ion-item>
+    <ion-item (click)="presentModal()">
+      <ion-thumbnail item-start><img src="assets/img/rev-icons/rev-B.jpg" /> </ion-thumbnail>
+      <p>Changed inspection quantity from 3 to 5 times.</p>
+    </ion-item>
+    <ion-item (click)="presentModal()">
+      <ion-thumbnail item-start><img src="assets/img/rev-icons/rev-C.jpg" /></ion-thumbnail>
+      <p>Changed inspection quantity from 3 to 5 times.</p>
+    </ion-item>
+    <ion-item (click)="presentModal()">
+      <ion-thumbnail item-start><img src="assets/img/rev-icons/rev-D.jpg" /></ion-thumbnail>
+      <p>Changed inspection quantity from 3 to 5 times.</p>
+    </ion-item>
+    <ion-item (click)="presentModal()">
+      <ion-thumbnail item-start><img src="assets/img/rev-icons/rev-E.jpg" /></ion-thumbnail>
+      <p>Changed inspection quantity from 3 to 5 times.</p>
+    </ion-item>
+  </ion-list>
 
 </ion-content>

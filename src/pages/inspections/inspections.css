@@ -5,8 +5,9 @@
   page-inspections .card-background-page ion-card {
     position: relative;
     text-align: center;
+    margin-top: 15px;
     width: 45%;
-    min-height: 300px;
+    min-height: 275px;
     float: left;
     border: 1px dotted red; }
   page-inspections .card-background-page .card-title {
@@ -50,6 +51,8 @@
     position: absolute;
     top: 52%;
     width: 100%;
-    color: #fff; } }
+    color: #fff; }
+  page-inspections .card-background-page .nav-header-title-text {
+    float: right; } }
 
 /*# sourceMappingURL=inspections.css.map */
