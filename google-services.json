@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "952797014568",
+    "firebase_url": "https://thatco-bcc93.firebaseio.com",
+    "project_id": "thatco-bcc93",
+    "storage_bucket": "thatco-bcc93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952797014568:android:7637e92c091f2ebc",
+        "android_client_info": {
+          "package_name": "com.thatco.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952797014568-9rvpvkrfrki66b5ubbd0jhibre45sgg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC27GkfWCJ7MFUuk_2bEj5P_kb8TDwIFdM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
