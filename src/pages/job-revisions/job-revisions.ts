@@ -17,6 +17,8 @@ import { RevisionModalPage } from "./revision-modal/revision-modal";
 })
 export class JobRevisionsPage {
 
+  navPushRevisionModalPage = RevisionModalPage;
+
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public modalCtrl: ModalController) {
