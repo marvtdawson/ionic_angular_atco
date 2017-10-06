@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add New Team Member</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="newMemberForm" novalidate>
+      <ion-list class="form-group">
+        <ion-item>
+          <ion-label floating>Name</ion-label>
+          <ion-input  type="text"
+                      formControlName="name"
+                      placeholder="Name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Title</ion-label>
+          <ion-input type="text"
+                     name="title"
+                     formControlName="title"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Shift</ion-label>
+          <ion-input type="text"
+                     name="shift"
+                     formControlName="shift"></ion-input>
+        </ion-item>
+      </ion-list>
+  </form>
+</ion-content>

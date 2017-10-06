@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,uCAAqB;EACnB,UAAU,EAAE,KAAK",
+"sources": ["team-members.scss"],
+"names": [],
+"file": "team-members.css"
+}

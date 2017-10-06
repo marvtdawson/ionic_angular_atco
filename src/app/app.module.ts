@@ -5,6 +5,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Push } from "@ionic-native/push";
+import { IonicStorageModule } from "@ionic/storage";
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -23,8 +24,8 @@ import { TeamMembersPage } from "../pages/team-members/team-members";
 import { MembersProfilePage } from "../pages/members-profile/members-profile";
 import { NewJobPage } from "../pages/new-job/new-job";
 import { ItaMemberPage } from "../pages/members-profile/ita-member/ita-member";
-
-
+import { NewTeamMemberPage } from "../pages/new-team-member/new-team-member";
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -40,12 +41,15 @@ import { ItaMemberPage } from "../pages/members-profile/ita-member/ita-member";
     MembersProfilePage,
     NewJobPage,
     ItaMemberPage,
-    RevisionModalPage
+    RevisionModalPage,
+    NewTeamMemberPage,
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    IonicStorageModule.forRoot(),
+    HttpModule,
+    ReactiveFormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -62,6 +66,7 @@ import { ItaMemberPage } from "../pages/members-profile/ita-member/ita-member";
     NewJobPage,
     ItaMemberPage,
     RevisionModalPage,
+    NewTeamMemberPage,
   ],
   providers: [
     StatusBar,
@@ -69,7 +74,8 @@ import { ItaMemberPage } from "../pages/members-profile/ita-member/ita-member";
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     NetworkAuthProvider,
     UserAuthProvider,
-    Push
+    Push,
+    Storage,
   ]
 })
 export class AppModule {}

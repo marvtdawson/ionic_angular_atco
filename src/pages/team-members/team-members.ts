@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {MembersProfilePage} from "../members-profile/members-profile";
 import { ItaMemberPage } from "../members-profile/ita-member/ita-member";
+import {NewTeamMemberPage} from "../new-team-member/new-team-member";
 
 /**
  * Generated class for the TeamMembersPage page.
@@ -19,8 +20,10 @@ export class TeamMembersPage {
 
   pushMemberProfilePage = MembersProfilePage;
   pushItaMemberPage = ItaMemberPage;
+  pushNewTeamMemberPage = NewTeamMemberPage;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
